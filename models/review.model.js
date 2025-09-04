@@ -12,7 +12,10 @@ const reviewSchema = new mongoose.Schema({
         problemDifficulty: String,
         problemTopics: [String],
         submissionCode: String,
+        runtime: String,
+        memory: String,
         language: String,
+        code: String,
         submissionTime: Date
     }],
     aiReview: {
