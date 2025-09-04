@@ -2,12 +2,6 @@
 
 A backend service that integrates with LeetCode to provide AI-powered code reviews and insights.
 
-## Base URL
-
-```
-http://localhost:3000
-```
-
 ## Authentication
 
 Most endpoints require JWT authentication. Include the token in the Authorization header:
