@@ -11,7 +11,7 @@ const aiRoutes = require('./routes/ai.routes');
 
 // CORS Configuration
 app.use(cors({
-    origin: [   'http://localhost:5173', 'https://my-dsa-pal.vercel.app'],
+    origin: [   'http://localhost:5173', 'https://my-dsa-pal-frontend.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
     credentials: true,
