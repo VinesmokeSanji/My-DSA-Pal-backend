@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({ // it is a bluepriint of how our user w
         unique: true,
         lowercase: true,
         minlength:[3, 'Username must be at least 3 characters long']
-    } ,
+    },
     email:{
         type: String,
         required: true,
@@ -16,12 +16,28 @@ const userSchema = new mongoose.Schema({ // it is a bluepriint of how our user w
         unique: true,
         lowercase: true,
         minlength:[13, 'Email must be at least 3 characters long']
-    } ,
+    },
     password:{
         type: String,
         required: true,
         trim: true,
         minlength:[5, 'Password must be at least 6 characters long']    
+    },
+    leetcode: {
+        username: {
+            type: String,
+            trim: true
+        },
+        sessionID:{
+            type: String,
+        },
+        lastSync: {
+            type: Date
+        },
+        totalSolved: {
+            type: Number,
+            default: 0
+        }
     }
 });
 

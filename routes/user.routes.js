@@ -13,6 +13,8 @@ router.get('/test', (req, res) => {
     res.send('User route is working fine');
 });
 
+
+
 router.get('/register', (req, res) => { 
     res.render('register'); 
 });
