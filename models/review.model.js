@@ -26,6 +26,10 @@ const reviewSchema = new mongoose.Schema({
         spaceComplexityAnalysis: String,
         learningResources: [String]
     },
+    userNotes: {
+        type: String,
+        default: ""
+    },
     generatedAt: {
         type: Date,
         default: Date.now
